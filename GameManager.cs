@@ -125,6 +125,7 @@ public class GameManager : MonoBehaviour
             secondCard.GetComponent<card>().destroyCard();
 
             int cardsLeft = GameObject.Find("Cards").transform.childCount;
+            Debug.Log(cardsLeft);
             if (cardsLeft == 2)
             {
                 Invoke("endgame", 1.0f);
